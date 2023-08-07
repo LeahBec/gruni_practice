@@ -31,7 +31,7 @@ alphabet_to_decimal() {
     )
 
     if [ $# -eq 0 ]; then
-        echo "Enter alphabetical letters (without spaces):"
+        echo "Enter alphabetical letters only: "
         read -n 1 letters
     else
         letters=$@
