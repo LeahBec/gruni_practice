@@ -1,5 +1,3 @@
-"trial"
-
 Authors: Efrat Yellin, Chaya Lipshitz , Rachel Fabian, Leah Beckerman
 Description: An application to provide multiple I/O services:
  1. Downloads images from urls provided by the user to a requested directory
