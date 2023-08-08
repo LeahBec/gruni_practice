@@ -1,7 +1,7 @@
 Authors:
-Efrat Yellin
-Chaya Lipshitz 
-Rachel Fabian
+Efrat Yellin,
+Chaya Lipshitz ,
+Rachel Fabian,
 Leah Beckerman
 
 Description:
