@@ -4,8 +4,10 @@ alphabet_to_decimal() {
     
 
     if [ $# -eq 0 ]; then
+
         echo "Enter alphabetical letters:"
         read letters
+
     else
         letters=$@
     fi
@@ -16,11 +18,7 @@ alphabet_to_decimal() {
 	        printf %d\\n \'$letter
 	fi
 
-	 # if [ -z "$decimal_value" ]; then
-       #     echo "Invalid letter: $letter"
-       # else
-        #    echo "Decimal value of $letter is $decimal_value"
-       # fi
+	
     done
 }
 
