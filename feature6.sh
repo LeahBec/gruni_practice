@@ -8,15 +8,16 @@ print_symmetric_array() {
   for ((i = 0; i < $rows; i++)); do
     for ((j = 0; j < $cols; j++)); do
       # Print the element at the current position
-      printf "%s\t" "${array[$i,$j]}"
+      printf "%5s\t" "${array[$i,$j]}"
     done
     echo  # Move to the next line
   done
 }
 
 feature6 () {
-  all_users_features=$(grep 'bin/bash' /etc/passwd)
-  all_users_count=$(grep -c 'bin/bash' /etc/passwd)
+  all_users_features=$(cat /etc/passwd) 
+  #echo $all_users_features
+  all_users_count=$(cat /etc/passwd | wc -l)
   declare -A array
   row=0
   column=0
