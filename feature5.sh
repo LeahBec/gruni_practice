@@ -1,6 +1,6 @@
 #!/bin/bash
 
-exe5() {
+feature5() {
     rows=$(($RANDOM % 10+ 1))
     columns=$(($RANDOM % 10 +1))
 
@@ -18,3 +18,5 @@ exe5() {
         echo
     done
 }
+
+feature5 "$@"

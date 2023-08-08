@@ -1,6 +1,6 @@
 #!/bin/bash
 
-exe3() {
+feature3() {
     num_words=("one" "two" "three" "four" "five" "six" "seven" "eight" "nine" "ten")
 
     #check that we have enough arguments
@@ -24,7 +24,7 @@ exe3() {
     done
 }
 
-
+feature3 "$@"
 
 
 
