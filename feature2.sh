@@ -19,4 +19,4 @@ feature2() {
   fi
 }
 
-feature2 
+feature2 "$@"
