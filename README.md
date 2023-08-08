@@ -1,4 +1,4 @@
 # gruni_practice
-firsl lesson
+first lesson
 
 😀😁😂🤣😃😄
