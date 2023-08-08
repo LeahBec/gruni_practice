@@ -1,6 +1,10 @@
 #!/bin/bash
 
+<<<<<<< HEAD
+feature3() {
+=======
 exe3() {
+>>>>>>> origin/main
     num_words=("one" "two" "three" "four" "five" "six" "seven" "eight" "nine" "ten")
 
     #check that we have enough arguments
@@ -24,7 +28,11 @@ exe3() {
     done
 }
 
+<<<<<<< HEAD
+feature3 "$@"
+=======
 
+>>>>>>> origin/main
 
 
 
