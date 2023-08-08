@@ -32,18 +32,22 @@ alphabet_to_decimal() {
 
     if [ $# -eq 0 ]; then
         echo "Enter alphabetical letters:"
-        read -n 1 letters
+        read letters
     else
         letters=$@
     fi
 
     for letter in $(echo $letters | grep -o .); do
-        decimal_value=${alphabet[$letter]}
-        if [ -z "$decimal_value" ]; then
-            echo "Invalid letter: $letter"
-        else
-            echo "Decimal value of $letter is $decimal_value"
-        fi
+        re='[a-zA-Z]'
+	if [[ $letter =~ $re ]];  then
+	        printf %d\\n \'$letter
+	fi
+
+	 # if [ -z "$decimal_value" ]; then
+       #     echo "Invalid letter: $letter"
+       # else
+        #    echo "Decimal value of $letter is $decimal_value"
+       # fi
     done
 }
 
