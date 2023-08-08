@@ -7,9 +7,9 @@ main() {
         echo "No arguments provided"
         exit
     fi
-    
+
     choice="$1"
-    bash ./feature$choice.sh ${@:2}
+    bash ./features-scripts/feature$choice.sh ${@:2}
 }
 
 main "$@"
