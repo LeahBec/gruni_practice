@@ -18,8 +18,9 @@ for url in ${@:2}; do
 	fi
 done
 timestamp=$(date +'%Y-%m-%d-%H-%M-%S')
-ls $dir
+files="$(ls $dir)"
+echo $files
 echo $timestamp
 folder_name="$timestamp.zip"
-zip -q -j "$folder_name" "$dir"
+zip -r "$folder_name"  $dir
 
