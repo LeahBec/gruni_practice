@@ -1,1 +1,1 @@
-./down_zip.sh "$@"
+./features-scripts/down_zip.sh "$@"
