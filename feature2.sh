@@ -1,4 +1,5 @@
 #!/bin/bash
+
 feature2() {
   if [[ $# -eq 2 ]]; then
     output=$(cat "$1" 2>&1)  # Capture both stdout and stderr to 'output'
@@ -18,3 +19,4 @@ feature2() {
   fi
 }
 
+feature2 
